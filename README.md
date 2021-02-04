@@ -9,8 +9,9 @@
 4. GIT을 활용한 협업, WebPack 모듈화, 번들링을 실습한다.
 5. 외부 API 사용을 실습한다.
 
-## 팀이름: Under 30
 
+
+## 팀이름: Under 30
 
 ## 해커톤 참가자
 1. 25세 [류하준](https://github.com/HaJunRyu)
