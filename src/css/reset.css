@@ -1,0 +1,36 @@
+/* reset code */
+
+/* root 요소의 기본 글자크기 결정, 세로스크롤바 보이게 설정 */
+html {
+  font-size: 10px;
+  overflow-y: visible;
+}
+
+/* 기본 박스사이징 설정 */
+body,
+body *,
+body::before,
+body::after,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sans-serif';
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* 숨김 hidden 처리 class */
+.a11y-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+}

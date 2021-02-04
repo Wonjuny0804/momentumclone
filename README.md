@@ -1,5 +1,6 @@
 # FastCampus Frontend School 18th Hackathon - Momentum clone coding
-FDS18 자바스크립트 모멘텀 클론 코딩
+**FDS18 자바스크립트 모멘텀 클론 코딩**
+
 
 ## 해커톤 주제 기획의도 
 1. 지금까지 배운 자바스크립트를 활용하여 **간단한** 애플리케이션을 구현한다. 
@@ -8,38 +9,35 @@ FDS18 자바스크립트 모멘텀 클론 코딩
 4. GIT을 활용한 협업, WebPack 모듈화, 번들링을 실습한다.
 5. 외부 API 사용을 실습한다.
 
-## 팀이름 Under30(언더써티)
+## 팀이름: 
+
 
 ## 해커톤 참가자
-1. 97년생 25세 류하준
-2. 94년생 28세 최진영
-3. 93년생 29세 장원준
+1. 25세 [류하준](https://github.com/HaJunRyu)
+2. 28세 [최진영](https://github.com/Bernese-Corgi)
+3. 29세 [장원준](https://github.com/Wonjuny0804)
 
-## 주제 소개
-### Momentum 설명
-사진
-모멘텀은 어쩌구 저쩌구
+## 모멘텀 소개 및 주요 기능
+![momentum image](https://user-images.githubusercontent.com/42370712/106717578-4320d800-6643-11eb-8ebe-5ce1bcef10f9.PNG)
+- 날씨와 시간 확인
+- 할 일 기록 및 확인
+- 하루마다 한번씩 새로운 사진 업데이트
+- 매일 새로운 명언을 보여줌
+- 그날의 가장 중요한 업무를 설정
+- 검색 바
+- 뽀모도로 타이머
+- 검색 커스터마이징
 
 ### Momentum clone 기능들
-1. 기능1
-2. 기능2
-3. 기능3
-...
+1. 날씨와 시간 확인
+2. todo list
+3. 배경이미지
+4. 명언
+5. 검색 바
+6. 그날의 메인 포커스
+
 
 ## 팀원 역할
-
-
-
-
-# Momentumclone(KOR)
-FDS18 JS Hackathon momentum clone coding 
-
-## what are we trying to do?
-1. First we are trying to practice JavaScript with the full potential of what we have learned so far. 
-2. DOM manipulation, asynchronous programming practice
-3. Reminder of HTML, CSS(SASS)
-4. Practice GIT, WebPack, module and bundling
-
-## Who joined this project
-1. HaJunRyu
-2. 
+#### 장원준
+#### 최진영
+#### 류하준
