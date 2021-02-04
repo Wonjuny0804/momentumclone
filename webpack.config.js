@@ -36,5 +36,4 @@ module.exports = {
   devtool: 'source-map',
   // https://webpack.js.org/configuration/mode
   mode: 'development'
-  
 };
