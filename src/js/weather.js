@@ -4,10 +4,6 @@ import { getWeatherUrl } from "./env";
 
 let weatherState = null;
 
-// 상수값
-const DEFAULT_LAT = 37;
-const DEFAULT_LON = 127;
-
 let lat = 0;
 let lon = 0;
 
@@ -24,6 +20,8 @@ const $weeklyWeatherIcon = document.querySelector('.weekly-weather-icon');
 const $weeklyWeatherTemp = document.querySelector('.weekly-weather-temp');
 
 const $weeklyWeatherList = document.querySelector('.weekly-weather-list');
+
+const $weeklyWeatherMenu = document.querySelector('.weekly-weather-menu');
 
 const render = weatherState => {
   if (!weatherState) {
@@ -112,6 +110,7 @@ const getWeatherData = async () => {
 const eventHadlerRegister = () => {
   // 이벤트 핸들러 정의
   const weeklyToggle = () => {
+    console.log('sf');
     $weatherSection.classList.toggle('active');
   };
 

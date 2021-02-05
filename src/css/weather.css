@@ -11,6 +11,8 @@
 .daily-weather {
   cursor: pointer;
   width: 70px;
+  user-select: none;
+
 }
 
 .daily-weather-top {
@@ -37,10 +39,17 @@
   font-size: 2.6rem;
   font-weight: 700;
   margin-left: 6px;
+  color: #FFF;
+}
+
+.daily-weather-location {
+  color: #FFF;
+  font-size: 1.4rem;
 }
 
 .weekly-weather {
   opacity: 0;
+  z-index: -9999;
   transition: 300ms;
   transition-timing-function: ease-out;
   width: 440px;
@@ -55,10 +64,12 @@
   border-radius: 5px;
   margin-right: -10px;
   margin-top: 10px;
+  user-select: none;
 }
 
 .active .weekly-weather {
-  opacity: 0.9;
+  opacity: 0.95;
+  z-index: 9999;
 }
 
 .weekly-weather-location {
@@ -160,5 +171,20 @@
   right: 26px;
   opacity: .7;
   font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.weather-menu-modal {
+  position: absolute;
+  top: 40px;
+  right: 5px;
+  border-radius: 5px;
+  background: rgb(51, 51, 51);
+  opacity: 1;
+  width: 100px;
+  padding: 6px;
+}
+
+.weather-menu-edit-location {
   cursor: pointer;
 }
