@@ -1,0 +1,15 @@
+.today-focus-wrapper {
+  width: 537px;
+  margin: auto;
+  text-align: center;
+  font-size: 3rem;
+}
+.today-focus-question {
+  margin: 0
+}
+.today-focus-input {
+  font-size: 3rem;
+  width: 537px;
+  border-style: none;
+  border-bottom: 2px solid;
+}
