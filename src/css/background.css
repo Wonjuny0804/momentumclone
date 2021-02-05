@@ -1,6 +1,17 @@
 body {
   overflow: hidden;
+  position: relative;
+}
+
+.background {
   width: 100vw;
   height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /* background-image: url('https://source.unsplash.com/collection/23428849/1600x900'); */
   background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
