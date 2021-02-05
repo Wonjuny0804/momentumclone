@@ -1,0 +1,163 @@
+.weather {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  text-align: right;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+}
+
+.daily-weather {
+  cursor: pointer;
+  width: 70px;
+}
+
+.daily-weather-top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+.daily-weather-icon-wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+}
+
+.daily-weather-icon {
+  width: 52px;
+  height: 52px;
+  margin-right: 6px;
+}
+
+.daily-weather-temp {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+.weekly-weather {
+  opacity: 0;
+  transition: 300ms;
+  transition-timing-function: ease-out;
+  width: 440px;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  width: 440px;
+  padding: 21px 21px 13px 21px;
+  background: #0f0f0fec;
+  color: #FFF;
+  border-radius: 5px;
+  margin-right: -10px;
+  margin-top: 10px;
+}
+
+.active .weekly-weather {
+  opacity: 0.9;
+}
+
+.weekly-weather-location {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.weekly-weather-state {
+  color: #FFF;
+  opacity: 0.7;
+}
+
+.weekly-weather-icon-wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+}
+
+.weather-detail {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 10px;
+}
+
+.weekly-weather-icon {
+  width: 116px;
+  height: 116px;
+  margin-right: 10px;
+}
+
+.weekly-weather-temp {
+  font-size: 6rem;
+  margin-left: 10px;
+}
+
+.weekly-weather-list {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+.weekly-weather-list li {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 5px;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.weekly-weather-list li:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.weekly-weather-list time {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.6;
+  margin-bottom: 3px;
+}
+
+.weekly-weather-list-item {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.weather-list-icon-wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17px;
+  height: 17px;
+}
+
+.weather-list-icon {
+  width: 33px;
+  height: 33px;
+}
+
+.weekly-weather-list .temp {
+  font-size: 1.1rem;
+  margin-left: 3px;
+}
+
+.weekly-weather-list .temp-max {
+  opacity: 0.4;
+}
+
+.weekly-weather-menu {
+  position: absolute;
+  top: 21px;
+  right: 26px;
+  opacity: .7;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
