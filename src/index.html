@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/0177b3b581.js" crossorigin="anonymous"></script>
   <script defer src="./js/index.js"></script>
   <title>Document</title>
 </head>
+
 <body>
   <header>
     <h1 class="a11y-hidden">Momentum</h1>
   </header>
   <main>
     <section class="search-bar">진영</section>
-    <section class="weather">하준</section>
+    <section class="weather">
+      <h2 class="a11y-hidden">날씨</h2>
+      <section class="daily-weather">
+        <h3>오늘 날씨</h3>
+        <img class="daily-weather-icon" src="" alt=""><em class="daily-weather-temp"></em>
+        <span class="daily-weather-location white-space"></span>
+      </section>
+      <section class="weekly-weather">
+        <h3 class="a11y-hidden">주간 날씨</h3>
+        <span class="weekly-weather-location"></span>
+        <em class="weekly-weather-state white-space"></em>
+        <i class="weekly-weather-icon"></i><em class="weekly-weather-temp"></em>
+        <hr>
+        <ol class="weekly-weather-list">
+          <!-- <li><time datetime=""></time><img src="" alt=""><em class="temp-min"></em><span></span><em class="temp-max"></em></li> -->
+        </ol>
+      </section>
+      <i class="fas fa-ellipsis-h"></i>
+    </section>
     <section class="time">진영</section>
     <section class="main-todo">원준</section>
   </main>
@@ -31,4 +52,5 @@
     <section class="todolist">원준</section>
   </footer>
 </body>
+
 </html>
