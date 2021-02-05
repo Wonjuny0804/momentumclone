@@ -1,0 +1,32 @@
+
+.quote-area {
+  text-align:center;
+}
+.quote-wrapper {
+  color: white;
+  width: 537px; 
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+.quote-wrapper > q {
+  transition: all 1s;
+}
+.quote-wrapper > span {
+  transition: all 2s;
+  font-size: 15px;
+  opacity: 0;
+  transform: translate3d(0, -20px, 0);
+}
+
+.quote-wrapper:hover > q {
+  transition: all 1s;
+  transform: translate3d(4, 10px, 0);
+}
+.quote-wrapper:hover > span {
+  transition: all 1s;
+  display: block;
+  opacity: 1;
+  transform: translate3d(0, 0px, 0);
+}
