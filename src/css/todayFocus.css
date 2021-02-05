@@ -1,0 +1,49 @@
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+
+.today-focus-wrapper {
+  width: 537px;
+  margin: auto;
+  text-align: center;
+  font-size: 2.7rem;
+}
+.today-focus-question {
+  margin: 0
+}
+.today-focus-input {
+  font-size: 3rem;
+  width: 536px;
+  border-style: none;
+  border-bottom: 2px solid;
+  text-align: center;
+}
+.today-focus-input:focus {
+  outline: none;
+}
+.focus-todo-wrapper {
+  width: 537px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+.focus-check-wrapper {
+  display: inline-block;
+  width: 350px;
+}
+.today-focus-title {
+  text-transform: uppercase;
+  margin: 0;
+}
+.focus-check-wrapper > label {
+  font-size: 3.6rem;
+}
+.remove-today-focus {
+  display: none;
+  position: absolute;
+  top: 75%;
+  right: 100px;
+  cursor: pointer;
+  transform: translate3d(0, -50%, 0);
+}
+.focus-check-wrapper:hover > .remove-today-focus{
+  display: block;
+}
