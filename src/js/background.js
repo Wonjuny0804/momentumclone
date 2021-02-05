@@ -32,3 +32,5 @@ const backgroundImage = () => {
       console.log('Invalid month');
   }
 };
+
+export default backgroundImage;
