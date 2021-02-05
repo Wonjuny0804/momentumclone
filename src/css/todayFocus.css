@@ -20,7 +20,9 @@
   background-color: transparent;
   border-bottom: 2px solid #fff;
   text-align: center;
+  color: #fff;
 }
+
 .today-focus-input:focus {
   outline: none;
   cursor: pointer;
