@@ -3,11 +3,14 @@
   flex-flow: row;
   justify-content: center;
   align-content: center;
+  color: #fff;
 }
 
 .today-container {
   display: flex;
   flex-flow: column wrap;
+  align-content: center;
+  margin-top: 150px;
 }
 
 .date-container {
