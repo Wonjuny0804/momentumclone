@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   // entry file
   // https://webpack.js.org/configuration/entry-context/#entry
-  entry: './src/js/index.js',
+  entry: ['@babel/polyfill', './src/js/main.js'],
   // 번들링된 js 파일의 이름(filename)과 저장될 경로(path)를 지정
   // https://webpack.js.org/configuration/output/#outputpath
   // https://webpack.js.org/configuration/output/#outputfilename
