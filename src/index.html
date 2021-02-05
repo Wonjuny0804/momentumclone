@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <script src="https://kit.fontawesome.com/0177b3b581.js" crossorigin="anonymous"></script>
-  <script defer src="./js/index.js"></script>
+  <!-- <script defer src="./js/index.js"></script> -->
+  <script type="module" src="./js/todayFocus.js"></script>
   <title>Document</title>
 </head>
 
@@ -37,11 +38,11 @@
     </section>
     <section class="time">진영</section>
     <section class="main-todo">
-      <div class="today-focus-wrapper">
+      <div class="today-focus-wrapper active">
         <h3 class="today-focus-question">What is your main focus for today?</h3>
         <input type="text" class="today-focus-input">
       </div>
-      <div class="focus-todo-wrapper">
+      <div class="focus-todo-wrapper not-active">
         <h3 class="today-focus-title">today</h3>
         <div class="focus-check-wrapper">
           <input type="checkbox" name="" id="todayFocus">
