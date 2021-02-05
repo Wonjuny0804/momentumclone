@@ -1,0 +1,70 @@
+.today {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.today-container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.date-container {
+  /* display: flex; */
+}
+
+.today-date,
+.today-day {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.today-date {
+  margin-right: 10px;
+}
+
+.today-clock {
+  font-size: 16rem;
+  font-weight: 700;
+}
+
+.changeclock-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.changeclock-box {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  transition: 300ms;  
+  border: transparent 1px solid;
+}
+
+.changeclock-btn {
+width: 100%;
+height: 100%;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 50%;
+  transition: 300ms;  
+}
+/* transform: rotate(180deg); */
+
+.changeclock-box:hover {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  border: lightgray 1px solid;
+}
+
+.changeclock-text {
+  padding: 5px;
+  /* width: 100%; */
+  opacity: 0;
+  transition: 300ms;  
+  background-color: rgba(0, 0, 0, 0.2);
+}
