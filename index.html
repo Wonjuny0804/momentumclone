@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/0177b3b581.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+<script defer src="./dist/js/bundle.js"></script></head>
+
+<body>
+  <header>
+    <h1 class="a11y-hidden">Momentum</h1>
+  </header>
+  <main>
+    <!-- <section class="search-bar">진영</section> -->
+    <section class="weather">
+      <h2 class="a11y-hidden">날씨</h2>
+      <section class="daily-weather">
+        <div class="daily-weather-top">
+          <h3 class="a11y-hidden">오늘 날씨</h3>
+          <span class="daily-weather-icon-wraper"><img class="daily-weather-icon" src="" alt="" /></span><em
+            class="daily-weather-temp"></em>
+        </div>
+        <span class="daily-weather-location white-space"></span>
+      </section>
+      <section class="weekly-weather">
+        <h3 class="a11y-hidden">주간 날씨</h3>
+        <span class="weekly-weather-location"></span>
+        <em class="weekly-weather-state white-space"></em>
+        <div class="weather-detail"><span class="weekly-weather-icon-wraper"><img class="weekly-weather-icon" src=""
+              alt=""></span><em class="weekly-weather-temp"></em></div>
+        <ol class="weekly-weather-list">
+          <!-- <li id="0"><time class="white-space" datetime="">THU</time><div class="weekly-weather-list-item"><span class="weather-list-icon-wraper"><img class="weather-list-icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="약간 비"/></span><em class="temp temp-min">0°</em><em class="temp temp-max">7°</em></div></li> -->
+        </ol>
+        <i class="weekly-weather-menu fas fa-ellipsis-h"></i>
+        <!-- <ul class="weather-menu-modal">
+          <li class="weather-menu-edit-location">Edit location</li>
+        </ul> -->
+      </section>
+    </section>
+    <section class="today">
+      <div class="today-container">
+        <div class="date-container">
+          <time class="today-date"></time>
+          <time class="today-day"></time>
+        </div>
+        <time class="today-clock white-space"></time>
+        <!-- <button class="meridiem-btn"></button> -->
+        <div class="changeclock-container">
+          <div class="changeclock-box">
+            <i class="fas fa-exchange-alt changeclock-btn toggle"></i>
+          </div>
+          <p class="changeclock-text">change to 24hours</p>
+        </div>
+      </div>
+
+      <!-- <section class="greethings">
+        <div class="greethings-wrapper">
+          <p class="greetings-sayHello">Good<span class="greetings-sayHello-time"></span>, <input type="checkbox"
+              name="" class="greetings-input" id=""></p>
+        </div>
+      </section> -->
+
+    </section>
+    <section class="main-todo">
+      <div class="today-focus-wrapper active">
+        <h3 class="today-focus-question">What is your main focus for today?</h3>
+        <input type="text" class="today-focus-input">
+      </div>
+      <div class="focus-todo-wrapper not-active">
+        <h3 class="today-focus-title">today</h3>
+        <div class="focus-check-wrapper">
+          <input type="checkbox" name="" id="todayFocus">
+          <label for="toayFocus">something todo</label>
+          <i class="remove-today-focus far fa-times-circle"></i>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="quote-area">
+      <div class="quote-wrapper">
+        <q></q>
+        <span></span>
+      </div>
+    </section>
+    <!-- <section class="todolist">원준</section> -->
+  </footer>
+  <div class="background"></div>
+</body>
+
+</html>
