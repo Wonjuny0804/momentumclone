@@ -1,6 +1,3 @@
-
-
-
 const renderTime = () => {
   const today = new Date();
   const date = today.toLocaleString().slice(0, 10).replaceAll('. ', ' / ');
@@ -17,7 +14,6 @@ const renderTime = () => {
   const $dispDay = document.querySelector('.today-day');
   const $dispClock = document.querySelector('.today-clock');
 
-  // const clock24Hours = today.toString().slice(16, 21);
   const clockMeridiem = `${hour}:${minute}`;
 
   $dispDate.textContent = date;
@@ -31,28 +27,3 @@ const timeInit = () => {
 };
 
 export default timeInit;
-
-// const $changeClockTypeBtn = document.querySelector('.changeclock-btn');
-// const $changeClockTypeText = document.querySelector('.changeclock-text');
-
-// $changeClockTypeBtn.onmouseenter = () => {
-//   $changeClockTypeText.style.opacity = 100;
-// };
-
-// $changeClockTypeBtn.onmouseleave = () => {
-//   $changeClockTypeText.style.opacity = 0;
-// };
-
-// const changeClock = () => {
-// $changeClockTypeBtn.onclick = () => {
-//   if ($dispClock.textContent === clockMeridiem) {
-//     $dispClock.textContent = clock24Hours;
-//     $changeClockTypeText.textContent = 'change to AM/PM';
-//   } else {
-//     $dispClock.textContent = clockMeridiem;
-//     $changeClockTypeText.textContent = 'change to 24hours';
-//   }
-// };
-// };
-
-// changeClock();
