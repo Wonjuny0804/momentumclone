@@ -1,0 +1,76 @@
+.today {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.today-container {
+  /* padding-left: 50px; */
+  width: 500px;
+}
+
+.today-date-container {
+  /* position: relative; */
+  /* padding: 50px; */
+}
+
+.today-date,
+.today-day {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.today-date {
+  margin-right: 1rem;
+}
+
+.today-clock {
+  font-size: 168px;
+  font-weight: 800;
+  /* display: block; */
+}
+
+.change-clock {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  line-height: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 300ms; 
+  /* display: block;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;  */
+}
+
+.change-clock:hover {
+  width: 30px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.change-clock-text {
+  padding: 5px;
+  /* opacity: 0; */
+  transition: 300ms;  
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.change-clock-container {
+  /* position: absolute; */
+  /* float: left; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  /* top: 50%; */
+  /* right: 0; */
+}
+.change-clock-text {
+
+}

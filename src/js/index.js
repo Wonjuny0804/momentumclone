@@ -1,1 +1,4 @@
-import '@babel/polyfill';
+import "@babel/polyfill";
+import backgroundRender from './background';
+
+backgroundRender();
