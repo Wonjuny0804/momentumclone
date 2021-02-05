@@ -3,17 +3,11 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  // entry file
-  // https://webpack.js.org/configuration/entry-context/#entry
   entry: ['@babel/polyfill', './src/js/index.js'],
-  // 번들링된 js 파일의 이름(filename)과 저장될 경로(path)를 지정
-  // https://webpack.js.org/configuration/output/#outputpath
-  // https://webpack.js.org/configuration/output/#outputfilename
   output: {
     path: path.resolve(__dirname, 'dist/js'),
     filename: 'bundle.js'
   },
-  // https://webpack.js.org/configuration/module
   module: {
     rules: [
       {
@@ -29,11 +23,19 @@ module.exports = {
             plugins: ['@babel/plugin-proposal-class-properties']
           }
         }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          "style-loader",
+          "css-loader"
+        ]
       }
     ]
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [new HtmlWebpackPlugin({
+   template:"./src/index.html"
+  })],
   devtool: 'source-map',
-  // https://webpack.js.org/configuration/mode
-  mode: 'development'
+  mode: 'development' 
 };
