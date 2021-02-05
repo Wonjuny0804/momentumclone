@@ -1,24 +1,13 @@
-const today = new Date();
-const date = today.toLocaleString().slice(0, 10).replaceAll('. ', ' / ');
-const day = today.toString().slice(0, 3);
-let hour = today.getHours();
-let minute = today.getMinutes();
-let second = today.getSeconds();
 
 
-// const $changeClockTypeBtn = document.querySelector('.changeclock-btn');
-// const $changeClockTypeText = document.querySelector('.changeclock-text');
-
-// $changeClockTypeBtn.onmouseenter = () => {
-//   $changeClockTypeText.style.opacity = 100;
-// };
-
-// $changeClockTypeBtn.onmouseleave = () => {
-//   $changeClockTypeText.style.opacity = 0;
-// };
 
 const renderTime = () => {
-  console.log(second);
+  const today = new Date();
+  const date = today.toLocaleString().slice(0, 10).replaceAll('. ', ' / ');
+  const day = today.toString().slice(0, 3);
+  let hour = today.getHours();
+  let minute = today.getMinutes();
+  let second = today.getSeconds();
 
   hour %= 12;
   hour = hour || 12;
@@ -41,6 +30,19 @@ const timeInit = () => {
   setInterval(renderTime, 1000);
 };
 
+export default timeInit;
+
+// const $changeClockTypeBtn = document.querySelector('.changeclock-btn');
+// const $changeClockTypeText = document.querySelector('.changeclock-text');
+
+// $changeClockTypeBtn.onmouseenter = () => {
+//   $changeClockTypeText.style.opacity = 100;
+// };
+
+// $changeClockTypeBtn.onmouseleave = () => {
+//   $changeClockTypeText.style.opacity = 0;
+// };
+
 // const changeClock = () => {
 // $changeClockTypeBtn.onclick = () => {
 //   if ($dispClock.textContent === clockMeridiem) {
@@ -54,5 +56,3 @@ const timeInit = () => {
 // };
 
 // changeClock();
-
-export default timeInit();

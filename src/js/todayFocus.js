@@ -7,18 +7,18 @@ const todayFocus = () => {
   const $focusChkBox = document.getElementById('todayFocus');
   
   const toggleActive = () => {
-    $focusWrapper.classList.toggle('active');
+    $focusWrapper.classList.toggle('focus-active');
     $focusWrapper.classList.toggle('not-active');
-    $todoWrapper.classList.toggle('active');
+    $todoWrapper.classList.toggle('focus-active');
     $todoWrapper.classList.toggle('not-active');
-  }
+  };
 
   $focusInput.addEventListener('keyup', e => {
     if (e.key !== 'Enter') return;
     toggleActive();
     $focusTodo.textContent = e.target.value;
   });
-  
+
   $todoWrapper.addEventListener('click', e => {
     console.log(e.target);
     if (!e.target.classList.contains('remove-today-focus')) return;
@@ -31,10 +31,7 @@ const todayFocus = () => {
     console.log(e.target.checked);
     if (e.target.checked) $focusTodo.classList.toggle('finished');
     else $focusTodo.classList.toggle('finished');
-  })
+  });
+};
 
-}
-
-todayFocus();
- 
 export default todayFocus;

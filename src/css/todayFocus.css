@@ -11,7 +11,7 @@
 .today-focus-question {
   margin: 0
 }
-.today-focus-input {
+.today-focus-input  {
   font-size: 3rem;
   width: 536px;
   border-style: none;
@@ -59,7 +59,7 @@
   z-index: 0;
   transition: opacity 1s 0s;
 }
-.active {
+.focus-active {
   opacity: 1;
   z-index: 4;
   transition: opacity 2s 2s;
