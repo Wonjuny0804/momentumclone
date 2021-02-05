@@ -36,12 +36,10 @@ const renderTime = () => {
   $dispClock.textContent = clockMeridiem;
 };
 
-const init = () => {
+const timeInit = () => {
   renderTime();
   setInterval(renderTime, 1000);
 };
-
-init();
 
 // const changeClock = () => {
 // $changeClockTypeBtn.onclick = () => {
@@ -56,3 +54,5 @@ init();
 // };
 
 // changeClock();
+
+export default timeInit();
